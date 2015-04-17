@@ -9,6 +9,8 @@
 
     <string name="title_activity_test">TestActivity</string>
 
+    <string name="drag_drop">Click on the image to drag and drop</string>
+
 
     <string-array name="listItems">
         <item>Information</item>

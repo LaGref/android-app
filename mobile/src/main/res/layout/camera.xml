@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/moreInfoButton"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight=".15"
+            android:src="@drawable/ic_action_info"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"/>
+
+
+        <ImageView
+            android:id="@+id/shareButton"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight=".15"
+            android:src="@drawable/abc_ic_menu_share_mtrl_alpha"/>
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05"/>
+
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/surface_custom_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+
+        android:id="@+id/waterMarkPic"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/ic_yes_icon"
+        android:visibility="visible"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/drag_drop">
+    </ImageView>
+
+        <!--</FrameLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"/>
+
+        <ImageView
+            android:id="@+id/retakeButton"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_content_clear"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"/>
+
+        <ImageView
+
+            android:id="@+id/selfieButton"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_selfie"
+            >
+        </ImageView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            >
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/shareButtonBotom"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_shareb"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
